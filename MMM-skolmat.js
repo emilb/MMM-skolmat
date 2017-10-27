@@ -12,11 +12,11 @@ Module.register("MMM-skolmat", {
 		if (this.weekMenu) {
 			this.weekMenu.forEach(item => {
 				var title = document.createElement("div");
-				title.className = "bright small light";
+				title.className = "bright medium light";
 				title.innerHTML = item.title;
 				wrapper.appendChild(title);
 				var menu = document.createElement("div");
-				menu.className = "bright xsmall light menu";
+				menu.className = "bright small light menu";
 				menu.innerHTML = item.menu;
 				wrapper.appendChild(menu);
 			});
