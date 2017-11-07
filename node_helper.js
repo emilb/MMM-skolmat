@@ -73,7 +73,7 @@ module.exports = NodeHelper.create({
 
         request({uri: url, encoding: null, headers: headers})
         .on("error", function(error) {
-            scheduleTimer();
+            self.scheduleTimer();
         })
         .pipe(iconv.decodeStream("UTF-8")).pipe(parser);
     },
